@@ -1,0 +1,40 @@
+<div class="full-page">
+    <div class="navbar">
+        <div>
+            <h1 class="heading">TICKET BOOKING SYSTEM</h1>
+        </div>
+        <nav>
+            <ul id='MenuItems'>
+                <!-- <li><a href='#'>Home</a></li>
+                <li><a routerLink="/bookticket" >Book Ticket</a></li>
+                <li><a href='#'>About Us</a></li> -->
+                <li><button [routerLink]="['/home']">Home</button></li>
+                <!-- <li><a href='#'>Cancel Ticket</a></li> -->
+               <!-- <li> <button [routerLink]="['/login']" class='logoutbtn' (click)="logout()">Logout</button> </li> -->
+               </ul>
+        </nav>
+        <div class="col-md-12">
+            <div class="container">
+              <form [formGroup]="addTicketForm"  (ngSubmit)="addTicket()">
+               <div  class="form-group"> <label for="bookingdate">Booking Date<sup class="text-danger">*</sup></label>
+                <input type="date" name="bookingdate" id="number" formControlName="bookingDate" placeholder="enter booking date" required>
+                
+            </div>
+           
+                 <div  class="form-group"> <label for="number">No Of Passengers<sup class="text-danger">*</sup></label>
+                  <input type="text" name="noofpassengers" id="number" formControlName="noOfPassengers" placeholder="enter no of passengers" required>
+                  
+              </div>
+               
+                
+               <div class="form-group"><button [routerLink]="['/ticketlist']" class="btn btn-outline-dark"  (click)="addTicket()">Book Ticket</button></div>
+              </form>
+    
+    
+            </div>
+          </div>
+    </div>
+
+</div>
+
+

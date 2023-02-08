@@ -1,0 +1,71 @@
+<div class="full-page">
+    <div class="navbar">
+        <div>
+          <h1 class="head">TICKET BOOKING SYSTEM</h1>
+        </div>
+        <nav>
+            <ul id='MenuItems'>
+                <li><a routerLink="/home">Home</a></li>
+              
+                <!-- <li> <button routerLink="/homepage" class='logoutbtn' (click)="logout()" >Logout</button> </li> -->
+            </ul>
+        </nav>
+    </div>
+   
+      <table class="table table-bordered">
+
+        <thead>
+
+          <tr>
+
+           
+
+            <!-- <th scope="col">Bus Name</th>
+
+            <th scope="col">Bus Number</th>
+
+            <th scope="col">Destination</th>
+
+            <th scope="col">Source</th>
+
+            <th scope="col">Journey Date</th> -->
+            <th scope="col">Booking Date</th>
+
+            <th scope="col">No.of.Passengers</th> 
+
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+         
+
+          <tr *ngFor="let ticket of ticket">
+
+            <!-- <td>{{ticket.busName}}</td>
+
+            <td>{{ticket.busNumber}}</td>
+
+            <td>{{ticket.destination}}</td>
+
+            <td>{{ticket.source}}</td>
+
+            <td>{{ticket.journeyDate}}</td> -->
+            <td>{{ticket.bookingDate}}</td>
+
+            <td>{{ticket.no_of_passengers}}</td> -->
+            
+            <td>
+                <button  class="btn btn-dark" [routerLink]="['/addticket']" (click)="deleteTicket(ticket.id)">Delete</button>
+
+            </td>
+
+       </tr>
+
+        </tbody>
+
+      </table>
+
+</div>
+

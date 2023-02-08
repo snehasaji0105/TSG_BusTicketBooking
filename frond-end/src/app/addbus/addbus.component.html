@@ -1,0 +1,54 @@
+<div class="full-page">
+    <div class="navbar">
+        <div>
+            <h1 class="heading">TICKET BOOKING SYSTEM</h1>
+        </div>
+        <nav>
+            <ul id='MenuItems'>
+                <!-- <li><a href='#'>Home</a></li>
+                <li><a routerLink="/bookticket" >Book Ticket</a></li>
+                <li><a href='#'>About Us</a></li> -->
+                <li><button [routerLink]="['/adminhome']">Home</button></li>
+                <!-- <li><a href='#'>Cancel Ticket</a></li> -->
+               <!-- <li> <button  class='logoutbtn' (click)="logout()">Logout</button> </li> -->
+               </ul>
+        </nav>
+        <div class="col-md-12">
+            <div class="container">
+              <form [formGroup]="addBusForm"  (ngSubmit)="addBus()">
+               <div  class="form-group"> <label for="name">Bus Name<sup class="text-danger">*</sup></label>
+                <input type="text" name="busname" id="name" formControlName="busName" placeholder="enter bus name" required>
+                
+            </div>
+           
+                 <div  class="form-group"> <label for="number">Bus Number<sup class="text-danger">*</sup></label>
+                  <input type="text" name="busnumber" id="number" formControlName="busNumber" placeholder="enter bus number" required>
+                  
+              </div>
+               <div  class="form-group"> <label for="routedestination">Route Destination<sup class="text-danger">*</sup></label>
+                <input type="text" name="" id="routedestination" formControlName="routeDestination" placeholder="enter route destination" required>
+                
+            </div>
+               <div  class="form-group"> <label for="routesource"> Route Source<sup class="text-danger">*</sup></label>
+                <input type="text" name="" id="routesource" formControlName="routeSource" placeholder="enter route source" required>
+                
+            </div>
+           
+
+            <div  class="form-group"> <label for="totalSeats">Total Seats<sup class="text-danger">*</sup></label>
+                <input type="text" name="" id="totalSeats" formControlName="totalSeats" placeholder="enter total seats" required>
+                
+            </div>
+               
+              
+                
+               <div class="form-group"><button [routerLink]="['/buslist']" class="btn btn-outline-dark" >Add Bus</button></div>
+              </form>
+    
+    
+            </div>
+          </div>
+    </div>
+
+</div>
+

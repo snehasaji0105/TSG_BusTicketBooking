@@ -1,0 +1,45 @@
+// @import "src/theme/theme-variables";
+// @import "~bootstrap/scss/mixins/breakpoints";
+
+// .login-container {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+// }
+
+// .login-box {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   min-height: 100%;
+// }
+
+// .ng-invalid.ng-touched:not(form) {
+//   border-left: 4px solid theme-color("danger");
+// }
+
+// @include media-breakpoint-down(xs) {
+//   .container {
+//     width: 100%;
+//   }
+// }
+
+
+// .gradient-custom {
+//   /* fallback for old browsers */
+//   background: #6a11cb;
+  
+//   /* Chrome 10-25, Safari 5.1-6 */
+//   background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  
+//   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+//   background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+//   }
+
+// #img-fluid{
+//     background-image: url(../../../assets/bus.jpg);
+// }
